@@ -5,7 +5,8 @@
   "description": "[![Actions Status](https://github.com/Cabyca/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cabyca/frontend-project-44/actions)",
   "homepage": "https://github.com/Cabyca/frontend-project-44#readme",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "bugs": {
     "url": "https://github.com/Cabyca/frontend-project-44/issues"
