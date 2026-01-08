@@ -4,7 +4,7 @@ install: # установить зависимости
 brain-games: # запуск игры
 	node bin/brain-games.js
 
-brain-even:
+brain-even: # игра на четность
 	node bin/brain-even.js
 
 publish: # публикация
