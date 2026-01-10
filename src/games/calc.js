@@ -36,6 +36,5 @@ export default () => {
     correctAnswer = result
     gameData.push({ question, correctAnswer })
   }
-  console.log(gameData)
   engine(gameTask, gameData)
 }
