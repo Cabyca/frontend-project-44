@@ -12,7 +12,7 @@ const engine = (gameTask, gameData) => {
 
   for (const item of gameData) {
     const { question, correctAnswer } = item
-    console.log(`Question:  ${question}`)
+    console.log(`Question: ${question}`)
     gamerAnswer = readlineSync.question('Your answer: ')
     console.log(typeof gamerAnswer, typeof correctAnswer)
     if (`${gamerAnswer}` !== `${correctAnswer}`) {
