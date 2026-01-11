@@ -14,7 +14,6 @@ const engine = (gameTask, gameData) => {
     const { question, correctAnswer } = item
     console.log(`Question: ${question}`)
     gamerAnswer = readlineSync.question('Your answer: ')
-    console.log(typeof gamerAnswer, typeof correctAnswer)
     if (`${gamerAnswer}` !== `${correctAnswer}`) {
       console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)

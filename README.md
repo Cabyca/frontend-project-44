@@ -6,9 +6,9 @@
 
 # frontend-project-44
 
-Склонируйте проект локально: git clone git@github.com:Cabyca/frontend-project-44.git
+Склонируйте проект локально: **git clone git@github.com:Cabyca/frontend-project-44.git**
 
-Перейдите в директорию проекта: cd frontend-project-44
+Перейдите в директорию проекта: **cd frontend-project-44**
 
 Установите утилиту **make** и установите зависимости в корне проекта командой **make install**
 
@@ -26,6 +26,26 @@
 
 Спасибо!
 
-Установка проекта и запуск игры Even
+Установка проекта и запуск игры **brain-even**
 
 [![asciicast](https://asciinema.org/a/HYxKEpgI8zgMsANc.svg)](https://asciinema.org/a/HYxKEpgI8zgMsANc)
+
+Запуск игры **brain-calc**
+
+[![asciicast](https://asciinema.org/a/VxOjNLXDdmv2gx53.svg)](https://asciinema.org/a/VxOjNLXDdmv2gx53)
+
+Запуск игры **brain-gcd**
+
+[![asciicast](https://asciinema.org/a/Igi1crVCtrCevqqK.svg)](https://asciinema.org/a/Igi1crVCtrCevqqK)
+
+Запуск игры **brain-prime**
+
+[![asciicast](https://asciinema.org/a/7CbKo0jqiDyjeknY.svg)](https://asciinema.org/a/7CbKo0jqiDyjeknY)
+
+Запуск игры **brain-progression**
+
+[![asciicast](https://asciinema.org/a/eYyvektV5kKCkhp3.svg)](https://asciinema.org/a/eYyvektV5kKCkhp3)
+
+
+
+
