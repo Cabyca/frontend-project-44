@@ -6,7 +6,7 @@
 
 # frontend-project-44
 
-Склонируйте проект локально: **git clone git@github.com:Cabyca/frontend-project-44.git**
+Склонируйте проект локально: **git clone git\@github.com:Cabyca/frontend-project-44.git**
 
 Перейдите в директорию проекта: **cd frontend-project-44**
 
