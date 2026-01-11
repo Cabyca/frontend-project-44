@@ -3,57 +3,40 @@ import { engine, ROUNDS_COUNTER } from '../index.js'
 import random from '../helpers/random.js'
 
 export default () => {
-  const LENGHT_PROGRESSION = 10;
-  const STEP = 3;
-  const MIN_VALUE = 1
-  const MAX_VALUE = 10
-  const gameTask = 'What is number result of the expression?'
+  const LENGHT_PROGRESSION = 10
+  const gameTask = 'What number is missing in the progression?'
   const gameData = []
-  let firstDigitOfProgression
-  let progressionStep
-  let iddenNumberIndex
+  let hiddenNumberIndex
   let correctAnswer
   let question
+  let progression
 
   for (let i = 0; i < ROUNDS_COUNTER; i += 1) {
-    firstDigitOfProgression = random(MIN_VALUE, MAX_VALUE)
-    progressionStep = random(1, STEP)
+    progression = createProgression(LENGHT_PROGRESSION)
     hiddenNumberIndex = random(0, LENGHT_PROGRESSION - 1)
-    
-
-    
-    question = `${randomValue1} ${randomOperator} ${randomValue2}`
-    correctAnswer = result
+    correctAnswer = progression[hiddenNumberIndex]
+    progression[hiddenNumberIndex] = '..'
+    question = progression.join(' ')
     gameData.push({ question, correctAnswer })
   }
-  console.log(gameData)
   engine(gameTask, gameData)
 }
 
-Подсказки
-Чтобы создать последовательность, лучше сделать отдельную функцию. Она будет рассчитывать числа по такой формуле::
+const createProgression = (LENGHT_PROGRESSION) => {
+  const STEP = 3
+  const MIN_VALUE = 1
+  const MAX_VALUE = 10
+  let firstDigitOfProgression
+  let progressionStep
 
-currentElement = start + index * step
+  firstDigitOfProgression = random(MIN_VALUE, MAX_VALUE)
+  progressionStep = random(1, STEP)
 
-function progression()
-{
-    $gameTask = 'What number is missing in the progression?';
-    
-    $gameData = [];
+  let progression = []
 
-    for ($i = 0; $i < ROUNDS_COUNTER; $i += 1) {
-        $firstDigitOfProgression = mt_rand(MIN_VALUE, MAX_VALUE);
-        $progressionStep = mt_rand(1, STEP);
-        $hiddenNumberIndex = mt_rand(0, LENGHT_PROGRESSION - 1);
-        
-        for ($j = 0; $j < LENGHT_PROGRESSION; $j += 1) {
-            $progressions[$j] = $firstDigitOfProgression + $progressionStep * $j;
-        }
-        
-        $correctAnswers = (string) $progressions[$hiddenNumberIndex];
-        $progressions[$hiddenNumberIndex] = '..';
-        $questions = implode($progressions, ' ');
-        $gameData[$questions] = $correctAnswers;
-    }
-    engine($gameTask, $gameData);
+  for (let i = 0; i < LENGHT_PROGRESSION; i += 1) {
+    progression.push(firstDigitOfProgression + progressionStep * i)
+  }
+
+  return progression
 }
