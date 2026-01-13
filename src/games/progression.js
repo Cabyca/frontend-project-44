@@ -1,4 +1,4 @@
-import { engine, ROUNDS_COUNTER } from '../index.js'
+import { ROUNDS_COUNTER } from '../index.js'
 
 import random from '../helpers/random.js'
 
@@ -19,7 +19,7 @@ export default () => {
     question = progression.join(' ')
     gameData.push({ question, correctAnswer })
   }
-  engine(gameTask, gameData)
+  return [gameTask, gameData]
 }
 
 const createProgression = (LENGHT_PROGRESSION) => {
